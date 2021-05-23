@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Encomendar</title>
+    <link rel="stylesheet" href="../padroes/padrao.css"/>
+    <link rel="stylesheet" href="../padroes/header.css"/>
+    <link rel="stylesheet" href="encomendar.css"/>
+		<link rel="stylesheet" href="form.css"/>
+		<link rel="stylesheet" href="quemsomos.css"/>
+    <link rel="stylesheet" href="../padroes/footer.css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../padroes/mobile.css"/>
+    <link rel="stylesheet" href="mobile-encomendar.css"/>
+		 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../imagens/logo.png" alt="logo Amanda Souza">
+      <nav>
+        <ul class="box cores">
+          <li class="item linovidades">
+            <a href="../index/index.html" target="#">
+              <div class="container-interno-item">
+                <span class="icon icon-novidades">
+                  <i class="fas fa-star"></i>
+                </span>
+                <strong>Novidades</strong>
+                <figure class="selec snovidades"></figure>
+              </div>
+            </a>
+          </li>
+          <li class="item liprodutos">
+            <a href="../produtos/produtos.html">
+              <div class="container-interno-item">
+                <span class="icon icon-categoria">
+                  <i class="fas fa-gift"></i>
+                </span>
+                <strong>Produtos</strong>
+                <figure class="selec scategoria"></figure>
+              </div>
+            </a>
+          </li>
+          <li class="item "></li>
+          <li class="item licomo">
+            <a href="../como/como.html">
+              <div class="container-interno-item">
+                <span class="icon icon-como">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </span>
+                <strong>Como é feito</strong>
+                <figure class="selec sencomendar"></figure>
+              </div>
+            </a>
+          </li>
+          <li class="item liquem">
+            <a href="../quem-somos/quemsomos.html">
+              <div class="container-interno-item">
+                <span class="icon icon-quem">
+                  <i class="fas fa-question"></i>
+                </span>
+                <strong>Quem somos</strong>
+                <figure class="selec scarrinho"></figure>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="linha-sutil"> </div> -->
+    </header>
+    <main>
+      <section>
+        <div class="container header-container">
+          <div class="header-form">
+            <h1>
+              Vamos preparar sua encomeda</h1>
+          </div>
+        </div>
+        <div class="container info-form">
+          <h3>Informações pessoais</h3>
+					<br> <br>
+          <form action="#">
+            <ul id="erros" aria-hidden="true"></ul>
+            <!-- Nome -->
+            <div>
+              <label for="nome">
+                <span>Nome</span>
+                (obrigatório)</label>
+              <input type="text" name="nome" id="nome" aria-required="true" placeholder="Digite seu nome">
+            </div>
+           <!-- Email -->
+              <div>
+                <label for="email">
+                  <span>Email</span>
+                  (obrigatório)
+                </label>
+                <input type="text" name="email" id="email" placeholder="Digite seu email" aria-required="true">
+              </div>
+           <!-- Email -->
+              <div>
+                <label for="cidade">
+                  <span>Cidade</span>
+                  (obrigatório)
+                </label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" aria-required="true">
+              </div>
+            <!-- Email -->
+              <div class="telefone">
+                <fieldset>
+                  <label for="telefone">
+                    <span>Telefone</span>
+                    (obrigatório)
+                  </label>
+                  <br> <input
+                    id="codigoArea"
+                    name="codigoArea"
+                    title="Código de área"
+                    type="text"
+                    size="3"
+                    value=""
+                    aria-required="true"
+                    maxlength="3">
+                  <input
+                    id="primeirosDigitos"
+                    name="primeirosDigitos"
+                    title="Digite os 5 primeiros números do telefone"
+                    type="text"
+                    size="5"
+                    value=""
+                    maxlength="5"
+                    aria-required="true">
+                  <input
+                    id="ultimosDigito"
+                    name="ultimoDigito"
+                    title="Digite os 4 últimos números do telefone"
+                    type="text"
+                    size="4"
+                    value=""
+                    maxlength="4"
+                    aria-required="true">
+                </fieldset>
+								   
+        </div>
+        <div class="container delivery-form">
+          <h3>Forma de entrega</h3>
+          <ul class="fretes">
+            <li class="frete-op">
+              <input name="opcoes" type="radio" id="barato" checked="checked">
+              <label class="label-delivery" for="barato">
+                <strong>8<sup>R$</sup>
+                </strong>
+                <span>15 dias</span>
+              </label>
+            </li>
+            <li class="frete-op">
+              <input name="opcoes" type="radio" id="caro">
+              <label class="label-delivery" for="caro">
+                <strong>19<sup>R$</sup>
+                </strong>
+                <span>5 dias</span>
+              </label>
+            </li>
+          </ul>
+					 <button type="submit">Enviar</button>
+          </form>
+          <!-- <div class="container-opcoes">
+                                      <button type="radio" checked="checked" name="radio" class="btn op-barato">
+                                      <strong>0<sup>R$</sup></strong>
+                                      <span>5 - 10 dias</span>
+                                      </button>
+                                      <button type="radio" name="radio" class="btn op-caro">
+                                      <strong>9<sup>R$</sup></strong>
+                                      <span>5 dias</span>
+                                      </button>
+                                  </div> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="div mapa">
+        <strong class="mapa">Mapa do site</strong>
+        <ul class="ul-grid">
+          <li>
+            <a href="../index/index.html">home</a>
+          </li>
+          <li>
+            <a href="../index/index.html">novidades</a>
+          </li>
+          <li>
+            <a href="../produtos/produtos.html">produtos</a>
+          </li>
+          <li>
+            <a href="../como/como.html">como é feito</a>
+          </li>
+          <li>
+            <a href="../quem-somos/quemsomos.html">quem somos</a>
+          </li>
+        </ul>
+      </div>
+      <div class="div nome">
+        <a href="../index/index.html" class="nome-footer">Amanda souza</a>
+      </div>
+      <div class="div grid-social-footer">
+        <a target="blank" href="https://www.facebook.com/Souzaamandabiscuit/" class="flex-social-footer">
+          <i class="fab fa-facebook ui"></i>
+          <span class="nomes-sociais nome-face">/Souzaamandabiscuit</span>
+        </a>
+        <a target="blank" href="https://www.instagram.com/s0uzaamanda/" class="flex-social-footer">
+          <i class="fab fa-instagram ui"></i>
+          <span class="nomes-sociais nome-insta">@s0uzaamanda</span>
+        </a>
+      </div>
+    </footer>
+		<script>
+      $(function () { // No clique do botão do form
+        $("button").click(function (e) { // Esvaziamos o container de erros
+          //$("#erros").html('');
+          // Criamos a variável de validação
+          var isValid = 1;
+          // Iteramos cada container de campos de formulário
+          $("form").children("div").each(function () { // Encontramos todos os campos que queremos validar
+            var formControl = $(this).find("input, select, textarea");
+            // Se o campo estiver vazio:
+            if (! formControl.val()) { // Pegamos o texto do rótulo
+              var rotulo = $(this).find("label > span").html();
+              // Pegamos o id do campo
+              var idCampo = formControl.attr("id");
+              // Adicionamos a mensagem de erro no container
+              $("#erros").append(
+              '<li><a href="#' + idCampo + '">O campo ' + rotulo + ' é obrigatório</a></li>');
+              // Atualizamos a variável de validação como 0 (inválido)
+              isValid = 0;
+            }
+          });
+          // Se o form não é válido Setamos o container de erro com aria-hidden="false", mostramos ele no documento e damos foco
+          // no primeiro erro dessa forma o leitor de tela vai começar ler esse bloco
+          if (! isValid) {
+            $("#erros")
+              .attr("aria-hidden", false)
+              .show()
+              .children("li")
+              .first("")
+              .children("a")
+              .focus("");
+          } else { // Se for válido, envia
+            $("form").submit();
+          }
+
+        });
+      });
+    </script>
+  </body>
+</html>

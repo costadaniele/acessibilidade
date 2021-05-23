@@ -1,0 +1,63 @@
+.form {
+  background: #f5e0e5;
+    border-radius: 0.2rem;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+}
+
+input, textarea{
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+textarea{
+    border-radius: 0.2rem;
+    padding: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    border-radius: 5px;
+    height: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+  border: none;
+  margin: 4%;
+  width:15%;
+  height:20%;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2134e0;
+  float: right;
+  font-family: courgette;
+}
+
+.telefone input {
+  width:15%;
+}
+
+
+
+#erros a{
+  color: #F00;
+}
+#erros{
+  display: none;
+}
+
+
+textarea:focus, input:focus {
+  outline: none !important;
+  border:3px solid red;
+
+}
